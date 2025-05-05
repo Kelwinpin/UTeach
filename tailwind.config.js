@@ -6,13 +6,13 @@ module.exports = {
     ],
     theme: {
         extend: {
-            colors: {
-                primary: {
-                    DEFAULT: '#0F172A',
-                },
-            },
             fontFamily: {
-                sans: ['var(--font-roboto)', 'sans-serif'],
+                sans: ['var(--font-sans)', 'sans-serif'],
+                mono: ['var(--font-mono)', 'monospace'],
+            },
+            colors: {
+                background: 'var(--background)',
+                foreground: 'var(--foreground)',
             },
         },
     },
