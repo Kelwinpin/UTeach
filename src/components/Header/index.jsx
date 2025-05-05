@@ -8,7 +8,7 @@ export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className="w-full flex justify-between items-center py-4 px-6 shadow-sm">
+        <header className="w-full flex justify-between items-center lg:py-6 lg:px-20 px-5 py-10 shadow-sm">
             <div className="flex items-center gap-10">
                 <Image src="/images/logo.webp" alt="Uteach logo" width={100} height={24} />
 
