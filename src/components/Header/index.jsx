@@ -1,18 +1,17 @@
-'use client'; // se estiver usando app router
-
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Header() {
     return (
-        <header className="w-full flex justify-between items-center py-4 px-8 shadow-sm">
+        <header className="w-full flex flex-1 justify-between items-center py-4 px-8 shadow-sm">
             <div className="flex items-center gap-10">
                 <div className="flex items-center">
                     <Image src="/images/logo.webp" alt="Uteach logo" width={100} height={24} />
                 </div>
-                <nav className="hidden md:flex items-center gap-6 text-sm text-gray-800 font-medium">
-                    <a href="#" className="hover:text-orange-500">Products</a>
-                    <a href="#" className="hover:text-orange-500">Solutions</a>
-                    <a href="#" className="hover:text-orange-500">Pricing</a>
+                <nav className="hidden md:flex items-center gap-6 text-sm text-primary font-medium">
+                    <Link href="#" className="hover:text-orange-500">Products</Link>
+                    <Link href="#" className="hover:text-orange-500">Solutions</Link>
+                    <Link href="#" className="hover:text-orange-500">Pricing</Link>
                     <div className="relative group">
                         <button className="flex items-center gap-1 hover:text-orange-500">
                             Resources
@@ -25,10 +24,10 @@ export default function Header() {
             </div>
 
             <div className="flex items-center gap-4 text-sm">
-                <a href="#" className="text-gray-800 hover:text-orange-500">Log In</a>
-                <a href="#" className="px-4 py-2 border border-gray-800 rounded hover:bg-gray-100 transition">
+                <Link href="#" className="text-primary hover:text-orange-500">Log In</Link>
+                <Link href="#" className="px-4 py-2 border-2 border-primary rounded hover:bg-gray-100 transition">
                     Sign Up Now
-                </a>
+                </Link>
             </div>
         </header>
     );
