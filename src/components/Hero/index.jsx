@@ -6,13 +6,13 @@ export default function Hero() {
         <section className="w-full px-6 py-20 md:py-32 bg-white">
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
                 <div className="text-left">
-                    <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-                        <span className="relative inline-block">
-                            <span className="text-orange-500 absolute -bottom-1 left-0 w-full h-2 bg-orange-300 z-[-1] rotate-[-2deg]" />
-                            Teach
-                        </span>{" "}
-                        students worldwide
-                    </h1>
+                    <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+                        Teach
+                        students
+                    </h2>
+                    <span className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl w-30">
+                        worldwide
+                    </span>
 
                     <p className="mt-6 text-gray-600 text-lg leading-relaxed">
                         Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis ultricies.
@@ -30,11 +30,11 @@ export default function Hero() {
                         </Link>
                     </div>
 
-                    <div className="mt-10 text-gray-400 text-sm flex items-center gap-12">
-                        <span className="whitespace-break-spaces w-30">
+                    <div className="mt-10 text-gray-400 text-sm flex md:items-center items-baseline md:gap-12 md:flex-row flex-col">
+                        <span className="md:whitespace-break-spaces md:w-30">
                             Trusted by leading companies
                         </span>
-                        <div className="flex gap-12 mt-1">
+                        <div className="flex md:gap-12 gap-6 md:mt-1 mt-6">
                             <Image src="/images/icon1.webp" alt="Logo 1" width={25} height={31} />
                             <Image src="/images/icon2.webp" alt="Logo 2" width={25} height={31} />
                             <Image src="/images/icon3.webp" alt="Logo 3" width={25} height={31} />
@@ -44,7 +44,6 @@ export default function Hero() {
                     </div>
                 </div>
 
-                {/* Right image area */}
                 <div className="relative z-10 flex items-center justify-center">
                     <Image src="/images/hero.webp" alt="Hero Image" width={624} height={544} />
                 </div>
