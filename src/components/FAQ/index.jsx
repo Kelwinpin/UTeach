@@ -1,7 +1,9 @@
-// components/AllInOneSection.tsx
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import Card from "../Card";
+import { useEffect, useState } from "react";
 
 const lessons = [
   {
@@ -28,6 +30,25 @@ const lessons = [
 ];
 
 export default function FAQ() {
+    const [visibleLessons, setVisibleLessons] = useState(lessons);
+
+    useEffect(() => {
+      const handleResize = () => {
+        const width = window.innerWidth;
+        if (width < 763) {
+          setVisibleLessons(lessons.slice(0, 2));
+        } else {
+          setVisibleLessons(lessons);
+        }
+      };
+    
+      handleResize(); // Rodar uma vez no carregamento
+    
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+    
+
   return (
     <section className="py-24 px-6 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center relative z-10">
@@ -76,8 +97,8 @@ export default function FAQ() {
           </div>
 
           <div className="absolute z-2 md:-bottom-0 md:left-0 right-0 flex justify-center gap-4 mt-4 px-2">
-            {lessons.map((lesson, index) => (
-              <Card key={index} {...lesson} />
+            {visibleLessons.map((lesson, index) => (
+                <Card key={index} {...lesson} />
             ))}
           </div>
         </div>
