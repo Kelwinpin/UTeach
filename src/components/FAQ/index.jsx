@@ -55,9 +55,9 @@ export default function FAQ() {
         <div>
           <h1 className="text-3xl md:text-6xl font-bold text-[#0B0B28] leading-tight relative z-2">
               An all-in-one app
-              <div className="absolute md:top-14 md:left-24 top-7 left-8 w-37 inset-0 z-0 bg-[url('/images/lineOrangeBigger.webp')] bg-no-repeat pointer-events-none" />
+              <div className="absolute md:top-14 md:left-24 top-7 left-8 md:w-3xl w-37 inset-0 z-0 bg-[url('/images/lineOrangeBigger.webp')] bg-no-repeat pointer-events-none" />
               <br />   
-              that makes it easier
+              that makes it easiers
           </h1>
 
           <ul className="text-[#0B0B28]/80 text-base space-y-3 mb-8">
