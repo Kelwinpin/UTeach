@@ -50,12 +50,12 @@ export default function FAQ() {
     
 
   return (
-    <section className="py-24 px-6 bg-white relative overflow-hidden">
+    <section className="w-full px-6 py-20 md:py-32 bg-white overflow-x-hidden">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center relative z-10">
         <div>
-          <h1 className="text-4xl md:text-6xl font-bold text-[#0B0B28] leading-tight relative z-2">
+          <h1 className="text-3xl md:text-6xl font-bold text-[#0B0B28] leading-tight relative z-2">
               An all-in-one app
-              <div className="absolute top-14 left-24 inset-0 z-0 bg-[url('/images/lineOrangeBigger.webp')] bg-no-repeat pointer-events-none" />
+              <div className="absolute md:top-14 md:left-24 top-7 left-8 w-37 inset-0 z-0 bg-[url('/images/lineOrangeBigger.webp')] bg-no-repeat pointer-events-none" />
               <br />   
               that makes it easier
           </h1>
@@ -82,25 +82,26 @@ export default function FAQ() {
             Find more about the app →
           </Link>
         </div>
+        <div className="mt-30">
+            <div className="relative">
+            <div className="absolute md:-top-20 md:left-0 -top-70 left-20 inset-0 z-1 bg-[url('/images/bg-faq.webp')] bg-no-repeat  pointer-events-none" />    
+            <div className="absolute -left-40 -top-25 h-80 md:h-auto md:-top-40 md:-left-1 inset-0 z-0 bg-[url('/images/blob.webp')] bg-no-repeat pointer-events-none" />
+            <div className="relative z-2 md:left-20 bottom-28 rounded-xl overflow-hidden md:w-xl w-md -left-10">
+                <Image
+                    src="/images/desktop.webp"
+                    alt="App demo"
+                    width={800}
+                    height={400}
+                    className="w-full object-cover"
+                />
+            </div>
 
-        <div className="relative">
-          <div className="absolute -top-20 inset-0 z-1 bg-[url('/images/bg-faq.webp')] bg-no-repeat  pointer-events-none" />    
-          <div className="absolute -top-40 -left-1 inset-0 z-0 bg-[url('/images/blob.webp')] bg-no-repeat pointer-events-none" />
-          <div className="relative z-2 md:left-20 md:bottom-40 rounded-xl overflow-hidden">
-            <Image
-              src="/images/desktop.webp"
-              alt="App demo"
-              width={700}
-              height={400}
-              className="w-full object-cover"
-            />
-          </div>
-
-          <div className="absolute z-2 md:-bottom-0 md:left-0 right-0 flex justify-center gap-4 mt-4 px-2">
-            {visibleLessons.map((lesson, index) => (
-                <Card key={index} {...lesson} />
-            ))}
-          </div>
+            <div className="absolute z-2 md:-bottom-0 -bottom-10 -left-15 right-0 flex justify-center gap-4 mt-4 md:px-3 px-18">
+                {visibleLessons.map((lesson, index) => (
+                    <Card key={index} {...lesson} />
+                ))}
+            </div>
+            </div>
         </div>
       </div>
     </section>
