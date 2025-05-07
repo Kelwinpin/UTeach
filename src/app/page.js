@@ -2,6 +2,7 @@ import Explore from "@/components/Explore";
 import FAQ from "@/components/FAQ";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Info from "@/components/Info";
 import Slider from "@/components/Slider";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <FAQ />
       <Slider />
       <Explore />
+      <Info />
     </>
   );
 }
