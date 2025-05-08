@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Info from "@/components/Info";
 import Slider from "@/components/Slider";
+import Depoiments from "@/components/Depoiments";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Slider />
       <Explore />
       <Info />
+      <Depoiments />
     </>
   );
 }
