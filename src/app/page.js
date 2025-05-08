@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import Info from "@/components/Info";
 import Slider from "@/components/Slider";
 import Depoiments from "@/components/Depoiments";
+import Features from "@/components/Features";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Explore />
       <Info />
       <Depoiments />
+      <Features />
     </>
   );
 }
