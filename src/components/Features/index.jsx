@@ -26,7 +26,7 @@ export default function Features() {
                 View all features →
             </Link>
         </div>
-        <div>
+        <div className="mt-40">
             <div className="relative">
                 <div className="absolute md:-top-50 left-60 inset-0 z-1 bg-[url('/images/bg-faq.webp')] bg-no-repeat  pointer-events-none" />    
                 <div className="absolute -left-40 -top-25 h-80 md:h-auto md:-top-40 md:left-10 inset-0 z-0 bg-[url('/images/blob.webp')] bg-no-repeat pointer-events-none" />
