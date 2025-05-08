@@ -59,7 +59,7 @@ export default function Depoiments() {
             {
                 testimonials.map((testimonial, index) => (
                     <div key={index} className="bg-white shadow-xl rounded-xl p-8 space-y-6 mx-auto max-w-xl">
-                        <p className="text-lg text-gray-700">{testimonial.quote}</p>
+                        <div className="text-lg text-gray-700 text-left">{testimonial.quote}</div>
                         <div className="flex items-center space-x-4">
                             <Image
                                 src={testimonial.image}
@@ -68,8 +68,8 @@ export default function Depoiments() {
                                 width={48}
                                 height={48}
                             />
-                            <div className="flex flex-col align-baseline">
-                                <h3 className="text-lg font-semibold">{testimonial.name}</h3>
+                            <div className="flex flex-col items-start text-lg">
+                                <span className="text-lg font-semibold">{testimonial.name}</span>
                                 <span className="text-sm text-gray-500">{testimonial.role}</span>
                             </div>
                         </div>
