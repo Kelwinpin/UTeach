@@ -7,6 +7,7 @@ import Slider from "@/components/Slider";
 import Depoiments from "@/components/Depoiments";
 import Features from "@/components/Features";
 import SignUp from "@/components/SignUp";
+import SendEmail from "@/components/SendEmail";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Depoiments />
       <Features />
       <SignUp />
+      <SendEmail />
     </>
   );
 }
