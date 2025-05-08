@@ -28,53 +28,48 @@ export default function Features() {
             </div>
             <div className="w-full lg:w-1/2 mt-10 md:mt-20 lg:mt-0">
                 <div className="relative">
-                    {/* Background elements */}
                     <div className="absolute hidden md:block md:-top-20 lg:-top-40 md:left-20 lg:left-40 z-0 w-full h-full bg-[url('/images/bg-faq.webp')] bg-no-repeat bg-contain pointer-events-none" />
-                    <div className="absolute -left-20 md:-left-10 lg:left-0 -top-20 md:-top-30 lg:-top-40 z-0 w-full h-full bg-[url('/images/blob.webp')] bg-no-repeat bg-contain pointer-events-none" />
+                    <div className="absolute md:-left-10 lg:left-50 -top-5 md:-top-30 lg:-top-20 z-0 w-full h-full bg-[url('/images/blob.webp')] bg-no-repeat bg-contain pointer-events-none" />
 
-                    {/* Content container */}
                     <div className="relative z-10 flex flex-col items-center justify-center rounded-xl overflow-hidden mx-auto max-w-md md:max-w-lg lg:max-w-xl">
-                        {/* Top row with card and image */}
-                        <div className="flex flex-col md:flex-row items-center relative w-full">
-                            <div className="w-full md:w-auto">
+                        <div className="flex flex-row items-center relative w-full">
+                            <div className="w-auto">
                                 <Card {...lesson} />
                             </div>
-                            <div className="w-full md:w-auto flex justify-center md:justify-start">
+                            <div className="w-auto flex justify-center">
                                 <Image
                                     src="/images/Picture2.webp"
                                     alt="App demo"
                                     width={250}
                                     height={250}
-                                    className="w-auto h-auto max-w-[200px] md:max-w-[250px]"
+                                    className="w-auto h-auto max-w-[150px] md:max-w-[200px] lg:max-w-[250px]"
                                 />
                             </div>
-                            {/* User thumbnail */}
-                            <div className="absolute top-10 md:top-20 right-0 md:right-auto md:left-3/4">
+                            <div className="absolute top-10 md:top-20 right-0 md:right-auto md:left-4/6">
                                 <Image
                                     src="/images/UserThumb4.webp"
                                     alt="User demo"
                                     width={120}
                                     height={120}
-                                    className="w-20 h-20 md:w-24 md:h-24 lg:w-30 lg:h-30"
+                                    className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24"
                                 />
                             </div>
                         </div>
 
-                        {/* Bottom row with two images */}
-                        <div className="flex flex-col md:flex-row items-center justify-center mt-4">
+                        <div className="flex flex-row items-center justify-center mt-4 space-x-2">
                             <Image
                                 src="/images/Picture.webp"
                                 alt="App demo"
                                 width={305}
                                 height={180}
-                                className="w-full max-w-[250px] md:max-w-[305px] h-auto mb-4 md:mb-0 md:mr-2"
+                                className="w-auto h-auto max-w-[180px] md:max-w-[250px] lg:max-w-[305px]"
                             />
                             <Image
                                 src="/images/Picture1.webp"
                                 alt="App demo"
                                 width={230}
                                 height={180}
-                                className="w-full max-w-[200px] md:max-w-[230px] h-auto"
+                                className="w-auto h-auto max-w-[150px] md:max-w-[180px] lg:max-w-[230px]"
                             />
                         </div>
                     </div>
