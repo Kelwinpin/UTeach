@@ -39,19 +39,29 @@ export default function Depoiments() {
     <section className="py-24 px-6 bg-white text-center">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center">
-            <h2 className="text-4xl md:text-5xl font-semibold text-[#0B0B28] mb-8">What everyone says</h2>
-            <div className="flex gap-2">
+            <h2 className="text-3xl md:text-5xl font-semibold text-[#0B0B28] mb-8">What everyone says</h2>
+            <div className="gap-2 md:flex hidden">
                 <button
                     onClick={prevTestimonial}
-                    className="text-orange-400 text-2xl justify-center items-center hover:text-orange-800 transition cursor-pointer h-10 w-10 border-2 border-orange-400 rounded-full"
+                    className="text-orange-400 text-2xl hover:text-orange-800 transition cursor-pointer h-10 w-10 border-2 border-orange-400 rounded-full flex items-center justify-center"
                 >
-                    &#60;
+                    <Image 
+                        src={"/arrow-left.svg"}
+                        alt={`Arrow left`} 
+                        width={24}
+                        height={24}
+                    />
                 </button>
                 <button
                     onClick={nextTestimonial}
-                    className="text-orange-400 text-2xl hover:text-orange-800 transition cursor-pointer border-2 border-orange-400 rounded-full h-10 w-10"
+                    className="text-orange-400 text-2xl hover:text-orange-800 transition cursor-pointer border-2 border-orange-400 rounded-full h-10 w-10 flex items-center justify-center"
                 >
-                    &#62;
+                    <Image 
+                        src={"/arrow-right.svg"}
+                        alt={`Arrow right`} 
+                        width={24}
+                        height={24}
+                    />
                 </button>
             </div>
         </div>
