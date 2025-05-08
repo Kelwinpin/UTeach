@@ -8,6 +8,7 @@ import Depoiments from "@/components/Depoiments";
 import Features from "@/components/Features";
 import SignUp from "@/components/SignUp";
 import SendEmail from "@/components/SendEmail";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Features />
       <SignUp />
       <SendEmail />
+      <Footer />
     </>
   );
 }
