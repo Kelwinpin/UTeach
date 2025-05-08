@@ -6,6 +6,7 @@ import Info from "@/components/Info";
 import Slider from "@/components/Slider";
 import Depoiments from "@/components/Depoiments";
 import Features from "@/components/Features";
+import SignUp from "@/components/SignUp";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Info />
       <Depoiments />
       <Features />
+      <SignUp />
     </>
   );
 }
