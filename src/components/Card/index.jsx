@@ -19,7 +19,7 @@ export default function Card({
     <div
       id={id || `card-${title.toLowerCase().replace(/\s+/g, '-')}`}
       className="relative rounded-xl border border-gray-200 bg-white p-4 sm:p-5 md:p-6 shadow-md transition-all duration-300 
-                hover:shadow-xl md:w-52 w-full max-w-xs flex flex-col justify-between gap-2 h-full
+                hover:shadow-xl lg:w-52 w-full max-w-xs flex flex-col justify-between gap-2 h-full
                 transform hover:-translate-y-1"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
