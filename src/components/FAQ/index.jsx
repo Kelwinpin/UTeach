@@ -152,7 +152,7 @@ export default function AppFeatures() {
 
         <div className="mt-25 md:mt-0 relative">
           <div
-            className="absolute md:-top-30 md:left-80 inset-0 z-1 bg-[url('/images/bg-faq.webp')] bg-no-repeat bg-contain pointer-events-none"
+            className="absolute -top-25 left-30 md:-top-30 md:left-80 inset-0 z-1 bg-[url('/images/bg-faq.webp')] bg-no-repeat bg-contain pointer-events-none"
             aria-hidden="true"
           />
           <div
@@ -180,7 +180,7 @@ export default function AppFeatures() {
           </figure>
 
           <div
-            className="relative z-2 -mt-16 sm:-mt-18 md:-mt-25 grid grid-cols-2 md:grid-cols-3 sm:gap-10 gap-25 md:px-0"
+            className="relative z-2 -mt-16 sm:-mt-18 md:-mt-25 grid grid-cols-2 md:grid-cols-3 sm:gap-10 md:gap-25 gap-5  md:px-0 -left-2 -top-5"
             aria-label="Featured lessons"
             itemScope
             itemType="https://schema.org/ItemList"
