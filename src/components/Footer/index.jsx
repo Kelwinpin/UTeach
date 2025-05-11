@@ -27,22 +27,22 @@ export default function Footer() {
                         <nav aria-label="Product navigation">
                             <ul className="space-y-3">
                                 <li>
-                                    <Link href="/pricing" className="text-gray-300 hover:text-white transition duration-200">
+                                    <Link href="/" className="text-gray-300 hover:text-white transition duration-200">
                                         Pricing
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/overview" className="text-gray-300 hover:text-white transition duration-200">
+                                    <Link href="/" className="text-gray-300 hover:text-white transition duration-200">
                                         Overview
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/browse" className="text-gray-300 hover:text-white transition duration-200">
+                                    <Link href="/" className="text-gray-300 hover:text-white transition duration-200">
                                         Browse
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/accessibility" className="text-gray-300 hover:text-white transition duration-200 flex items-center">
+                                    <Link href="/" className="text-gray-300 hover:text-white transition duration-200 flex items-center">
                                         Accessibility
                                         <span className="ml-2 text-xs bg-pink-600 text-white px-1 py-0.5 rounded">BETA</span>
                                     </Link>
@@ -56,22 +56,22 @@ export default function Footer() {
                         <nav aria-label="Solutions navigation">
                             <ul className="space-y-3">
                                 <li>
-                                    <Link href="/brainstorming" className="text-gray-300 hover:text-white transition duration-200">
+                                    <Link href="/" className="text-gray-300 hover:text-white transition duration-200">
                                         Brainstorming
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/ideation" className="text-gray-300 hover:text-white transition duration-200">
+                                    <Link href="/" className="text-gray-300 hover:text-white transition duration-200">
                                         Ideation
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/wireframing" className="text-gray-300 hover:text-white transition duration-200">
+                                    <Link href="/" className="text-gray-300 hover:text-white transition duration-200">
                                         Wireframing
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/research" className="text-gray-300 hover:text-white transition duration-200">
+                                    <Link href="/" className="text-gray-300 hover:text-white transition duration-200">
                                         Research
                                     </Link>
                                 </li>
@@ -84,22 +84,22 @@ export default function Footer() {
                         <nav aria-label="Resources navigation">
                             <ul className="space-y-3">
                                 <li>
-                                    <Link href="/help-center" className="text-gray-300 hover:text-white transition duration-200">
+                                    <Link href="/" className="text-gray-300 hover:text-white transition duration-200">
                                         Help Center
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/blog" className="text-gray-300 hover:text-white transition duration-200">
+                                    <Link href="/" className="text-gray-300 hover:text-white transition duration-200">
                                         Blog
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/tutorials" className="text-gray-300 hover:text-white transition duration-200">
+                                    <Link href="/" className="text-gray-300 hover:text-white transition duration-200">
                                         Tutorials
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/faqs" className="text-gray-300 hover:text-white transition duration-200">
+                                    <Link href="/" className="text-gray-300 hover:text-white transition duration-200">
                                         FAQs
                                     </Link>
                                 </li>
@@ -112,22 +112,22 @@ export default function Footer() {
                         <nav aria-label="Support navigation">
                             <ul className="space-y-3">
                                 <li>
-                                    <Link href="/contact-us" className="text-gray-300 hover:text-white transition duration-200">
+                                    <Link href="/" className="text-gray-300 hover:text-white transition duration-200">
                                         Contact Us
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/developers" className="text-gray-300 hover:text-white transition duration-200">
+                                    <Link href="/" className="text-gray-300 hover:text-white transition duration-200">
                                         Developers
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/documentation" className="text-gray-300 hover:text-white transition duration-200">
+                                    <Link href="/" className="text-gray-300 hover:text-white transition duration-200">
                                         Documentation
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/integrations" className="text-gray-300 hover:text-white transition duration-200">
+                                    <Link href="/" className="text-gray-300 hover:text-white transition duration-200">
                                         Integrations
                                     </Link>
                                 </li>
@@ -140,23 +140,23 @@ export default function Footer() {
                         <nav aria-label="Company navigation">
                             <ul className="space-y-3">
                                 <li>
-                                    <Link href="/about" className="text-gray-300 hover:text-white transition duration-200">
+                                    <Link href="/" className="text-gray-300 hover:text-white transition duration-200">
                                         About
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/press" className="text-gray-300 hover:text-white transition duration-200">
+                                    <Link href="/" className="text-gray-300 hover:text-white transition duration-200">
                                         Press
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/events" className="text-gray-300 hover:text-white transition duration-200">
+                                    <Link href="/" className="text-gray-300 hover:text-white transition duration-200">
                                         Events
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
-                                        href="/request-demo"
+                                        href="/"
                                         className="text-white hover:text-gray-200 font-medium flex items-center transition duration-200"
                                     >
                                         Request Demo
@@ -178,13 +178,13 @@ export default function Footer() {
                     </div>
 
                     <div className="flex flex-wrap gap-6 items-center">
-                        <Link href="/terms" className="text-gray-400 hover:text-white text-sm transition duration-200">
+                        <Link href="/" className="text-gray-400 hover:text-white text-sm transition duration-200">
                             Terms
                         </Link>
-                        <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition duration-200">
+                        <Link href="/" className="text-gray-400 hover:text-white text-sm transition duration-200">
                             Privacy
                         </Link>
-                        <Link href="/contact" className="text-gray-400 hover:text-white text-sm transition duration-200">
+                        <Link href="/" className="text-gray-400 hover:text-white text-sm transition duration-200">
                             Contact
                         </Link>
 
