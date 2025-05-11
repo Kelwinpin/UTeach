@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Documentação
 
-## Getting Started
+Esse projeto foi feito utilizando Next.js, pelo fato de ser um SSR, o que ajuda no proposito da landing page, pois não precisa ser renderizada no servidor, e sim na cliente.
 
-First, run the development server:
+## Como executar
+
+Para executar o projeto, basta seguir os passos abaixo:
+
+1. Clone o repositório
+2. Entre na pasta do projeto
+3. Instale as dependências
+4. Execute o projeto
 
 ```bash
+git clone https://github.com/kelwin/UTeach.git
+cd UTeach
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Após a instalação das dependências, o projeto deve estar rodando na porta 3000.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Como usar
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Para utilizar o projeto, basta acessar o endereço http://localhost:3000 no seu navegador.
 
-## Learn More
+## Organização
 
-To learn more about Next.js, take a look at the following resources:
+O projeto está dividido em várias pastas, cada uma delas representa uma funcionalidade do projeto.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- /src: Contém o código-fonte do projeto, que é o que será renderizado no servidor.
+- /app: Contém a página inicial do projeto, que é a landing page.
+- /components: Contém os componentes do projeto, que são as partes que serão renderizadas no servidor.
+- /public: Contém os arquivos estáticos do projeto, como imagens, fontes, etc.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Padrão de Branches
 
-## Deploy on Vercel
+O projeto utiliza o padrão de branches de Git Flow, que é um padrão de branching que segue o fluxo de trabalho de desenvolvimento de software. O padrão utiliza a seguinte estrutura de branches:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- main: A branch principal do projeto, onde o código está sendo desenvolvido.
+- develop: A branch de desenvolvimento do projeto, onde as novas funcionalidades são criadas e testadas.
+- feature/nome-da-funcionalidade: A branch para a implementação de uma nova funcionalidade do projeto.
+- bugfix/nome-da-correção: A branch para a correção de um bug no projeto.
+- hotfix/nome-da-correção: A branch para a correção de um bug crítico no projeto.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Como contribuir
+
+Caso queira contribuir com o projeto, basta seguir os passos abaixo:
+
+1. Fork o repositório
+2. Crie uma branch com o nome da sua funcionalidade
+3. Faça o commit das suas alterações
+4. Crie um pull request para o repositório original
+
+## Licença
+
+Esse projeto está sob a licença MIT.
