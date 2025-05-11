@@ -116,7 +116,7 @@ export default function ClientTestimonials() {
         <div className="max-w-7xl mx-auto">
           <header className="flex justify-between items-center">
             <h1 className="text-3xl md:text-5xl font-semibold text-[#0B0B28] mb-8">
-              O que nossos clientes dizem
+              What everyone says            
             </h1>
             <div className="gap-2 md:flex hidden">
               <button

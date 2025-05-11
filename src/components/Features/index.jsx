@@ -35,9 +35,9 @@ export default function ProductFeatures() {
     const feature = {
         label: "Popular",
         labelColor: "bg-blue-100 text-blue-600",
-        title: "Design para o pensamento humano",
-        description: "Aprenda técnicas de design centrado no usuário que consideram os padrões cognitivos humanos para criar interfaces intuitivas.",
-        href: "/features/design-thinking",
+        title: "Design for how people think",
+        description: "Aliquam ut euismod condimentum elementum ultricies volutpat sit non. ",
+        href: "/",
     };
 
     const metaDescription = "Conheça os recursos exclusivos da nossa plataforma: design centrado no usuário, análises interativas e ferramentas de visualização que tornam seu trabalho mais produtivo.";
@@ -87,25 +87,30 @@ export default function ProductFeatures() {
                     <header>
                         <h1
                             id="features-heading"
-                            className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#0B0B28] mb-4 md:mb-6 lg:mb-8"
+                            className="text-2xl md:text-4xl lg:text-5xl font-semibold text-[#0B0B28] mb-4 md:mb-6 lg:mb-8 relative"
                             itemProp="name"
                         >
-                            Nossos recursos exclusivos
+                            All the cool features 
+                            <div
+                                className="absolute lg:top-10 lg:left-65 lg:w-60 md:w-36 md:left-48 md:top-8 top-7 left-32 w-24 h-4 inset-0 z-0 bg-[url('/images/lineOrangeBigger.webp')] bg-no-repeat bg-contain pointer-events-none"
+                                aria-hidden="true"
+                            />                       
                         </h1>
                     </header>
                     <p 
                         className="text-base md:text-lg text-[#0B0B28]/80 mb-6 md:mb-8 max-w-xl"
                         itemProp="description"
                     >
-                        Nossa plataforma oferece ferramentas intuitivas de design, análises interativas e recursos de visualização de dados
-                        que ajudam você a criar experiências envolventes para seus usuários e tomar decisões baseadas em dados.
+                        Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac. 
+                        In et dolor eu donec maecenas nulla. Cum sed orci, sit pellentesque quisque feugiat cras ullamcorper. 
+                        Ultrices in amet, ullamcorper non viverra a, neque orci.
                     </p>
                     <Link
                         href="/recursos"
                         className="text-blue-600 font-medium hover:underline inline-flex items-center group transition-all duration-300"
                         aria-label="Ver todos os recursos disponíveis"
                     >
-                        <span>Ver todos os recursos</span>
+                        <span>View all the features </span>
                         <span className="ml-1 group-hover:translate-x-1 transition-transform duration-300">→</span>
                     </Link>
                 </div>
@@ -115,11 +120,11 @@ export default function ProductFeatures() {
                         {mounted && (
                             <>
                                 <div
-                                    className="absolute hidden md:block md:-top-20 lg:-top-40 md:left-20 lg:left-40 z-0 w-full h-full bg-[url('/images/bg-faq.webp')] bg-no-repeat bg-contain pointer-events-none"
+                                    className="absolute md:block md:-top-30 lg:-top-40 md:left-30 lg:left-96 z-1 w-full h-full bg-[url('/images/bg-faq.webp')] bg-no-repeat bg-contain pointer-events-none"
                                     aria-hidden="true"
                                 />
                                 <div
-                                    className="absolute md:-left-10 lg:left-0 -top-5 md:-top-10 lg:-top-20 z-0 w-full h-full bg-[url('/images/blob.webp')] bg-no-repeat bg-contain pointer-events-none"
+                                    className="absolute md:-left-10 lg:left-50 -top-5 md:-top-10 lg:-top-20 z-0 w-full h-full bg-[url('/images/blob.webp')] bg-no-repeat bg-contain pointer-events-none"
                                     aria-hidden="true"
                                 />
                             </>
