@@ -62,7 +62,7 @@ export default function ExploreSection() {
                 alt="Ícone de avião representando conexões internacionais" 
                 width={isMobile ? 24 : 48}
                 height={isMobile ? 24 : 48}
-                className="absolute -top-8 right-0 md:-top-14 md:left-82 transform rotate-12"
+                className="absolute -top-8 left-50 md:-top-14 md:left-60 lg:left-82 transform rotate-12"
                 aria-hidden="true"
               />
               
