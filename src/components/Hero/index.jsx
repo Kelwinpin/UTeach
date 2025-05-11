@@ -23,10 +23,17 @@ export default function Hero() {
                 <div className="text-left">
                     <h1
                         id="hero-heading"
-                        className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"
+                        className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl relative"
                         itemProp="headline"
                     >
-                        Teach students worldwide
+
+                        Teach students
+                        <div
+                            className="absolute md:top-10 md:-left-2 top-8 -left-2 w-24 md:w-48 h-4 inset-0 z-0 bg-[url('/images/lineOrange.webp')] bg-no-repeat bg-contain pointer-events-none"
+                            aria-hidden="true"
+                        />
+                        <br />
+                        worldwide
                     </h1>
 
                     <p

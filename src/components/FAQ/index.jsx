@@ -47,7 +47,7 @@ export default function AppFeatures() {
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
-      if (width < 768) {
+      if (width <= 768) {
         setVisibleLessons(lessons.slice(0, 2));
       } else if (width < 1024) {
         setVisibleLessons(lessons.slice(0, 3));
@@ -105,7 +105,7 @@ export default function AppFeatures() {
           >
             An all-in-one app
             <div
-              className="absolute md:top-14 md:left-24 top-7 left-8 w-36 md:w-48 h-4 inset-0 z-0 bg-[url('/images/lineOrangeBigger.webp')] bg-no-repeat bg-contain pointer-events-none"
+              className="absolute md:top-14 md:left-24 top-7 left-9 w-36 md:w-48 lg:w-full h-4 inset-0 z-0 bg-[url('/images/lineOrangeBigger.webp')] bg-no-repeat pointer-events-none"
               aria-hidden="true"
             />
             <br />
@@ -180,7 +180,7 @@ export default function AppFeatures() {
           </figure>
 
           <div
-            className="relative z-2 -mt-16 sm:-mt-18 md:-mt-25 grid grid-cols-2 md:grid-cols-3 sm:gap-10 md:gap-25 gap-5  md:px-0 -left-2 -top-5"
+            className="relative z-2 -mt-16 sm:-mt-18 lg:-mt-25 grid grid-cols-2 lg:grid-cols-3 sm:gap-10 lg:gap-25 gap-5 lg:px-0 -left-2 -top-5"
             aria-label="Featured lessons"
             itemScope
             itemType="https://schema.org/ItemList"
@@ -196,7 +196,7 @@ export default function AppFeatures() {
                 <meta itemProp="position" content={String(index + 1)} />
                 <meta itemProp="name" content={lesson.title} />
                 <meta itemProp="description" content={lesson.description} />
-                <link itemProp="url" href={'#'} />
+                <link itemProp="url" href={'/'} />
                 <Card {...lesson} />
               </div>
             ))}
